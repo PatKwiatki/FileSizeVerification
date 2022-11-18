@@ -1,7 +1,7 @@
 Add-Type -AssemblyName PresentationCore,PresentationFramework
 
 Function Format-FileSize() {
-Param ([int]$size)
+Param ([long]$size)
 [string]::Format("{0:0.00} GB", $size / 1GB)
 }
 
